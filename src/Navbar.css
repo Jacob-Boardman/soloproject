@@ -9,11 +9,14 @@ ul{
     padding: 0;
     overflow: hidden;
     background-color: #79A7A8;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 li{
     float: left;
-
+    border-right: 1.5px solid #B7D7D8;
 }
 li h3{
   display: block;
@@ -27,4 +30,8 @@ li h3{
 li h3:hover {
   background-color: #B7D7D8;
   color: black;
+}
+
+li:last-child {
+  border-right: none;
 }

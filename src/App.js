@@ -11,6 +11,8 @@ class App extends Component {
         </div>
         <div className="header">
           Stuff after navbar
+
+          
         </div>
       </div>
     );
