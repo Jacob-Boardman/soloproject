@@ -7,12 +7,14 @@ class App extends Component {
     return (
       <div className="App">
         <div>
-          <Navbar/>            
+          <Navbar />
         </div>
         <div className="header">
-          Stuff after navbar
-
-          
+          <h1>Game Matching Database</h1>
+          <form className = "userLogin">
+            <input type="text" placeholder="Account Name..."/>
+            <input type="password" placeholder="Password..."/>
+          </form>
         </div>
       </div>
     );

@@ -1,3 +1,35 @@
-.App{
-  
+
+@font-face{
+  font-family: 'Atraian';
+  src: url('./SFAtarianSystem.ttf');
+}
+
+.header{
+  font-family: Atraian;
+  font-size: 40px;
+  margin-top: 7vh;
+  color: black;
+  text-align: center;
+}
+
+.userLogin input[type = text]{
+      
+    width: 10%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.userLogin input[type = password]{
+      
+    width: 10%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    box-sizing: border-box;
 }
