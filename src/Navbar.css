@@ -18,13 +18,18 @@ li{
     float: left;
     border-right: 1.5px solid #B7D7D8;
 }
-li h3{
+
+li h3 {
+  margin: 0px;
+
+}
+li h3 a{
   display: block;
   color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  margin: 0px;
+  margin: 0px;  
 }
 
 li h3:hover {
@@ -34,4 +39,9 @@ li h3:hover {
 
 li:last-child {
   border-right: none;
+}
+
+.is-active{
+  background-color: #B7D7D8;
+  color: black;
 }

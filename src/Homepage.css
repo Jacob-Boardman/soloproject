@@ -5,6 +5,7 @@
 }
 
 .header{
+  letter-spacing: 2px;
   font-family: Atraian;
   padding: 10px;
   margin: 7vh;
@@ -38,12 +39,15 @@
 }
 
 .userLogin input[type = password]{
-    width: 10%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border-radius: 4px;
-    box-sizing: border-box;
+  width: 10%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-right: 5px;
+  margin-left: 5px;
 }
 
 .userLogin input[type = submit]{
