@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import './Homepage.css';
+import CreateUsers from './CreateUser';
+
 
 class Users extends Component {
     render() {
@@ -8,12 +9,8 @@ class Users extends Component {
                 <div className="header">
                     <h1>User Database</h1>
                 </div>
-                <div className="userLogin">
-                    <form action="onSubmit">
-                        <input type="text" placeholder="Account Name..." />
-                        <input type="password" placeholder="Password..." />
-                        <input type="submit" value="Sumbit" />
-                    </form>
+                <div>
+                    <CreateUsers/>
                 </div>
             </div>
 

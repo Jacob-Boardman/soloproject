@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './Homepage.css';
+
 
 class Games extends Component {
     render() {
