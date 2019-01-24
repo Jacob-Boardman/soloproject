@@ -7,8 +7,8 @@ import './CreateUser.css';
 class CreateUser extends Component {
     render() {
         return (
-            <style></style>
-            < div className="createUser" >
+            
+            <div className="createUser" >
                 <form className="userForm" action="onSubmit">
                     <label for="firstName">First Name</label><input className="firstName" type="text" placeholder="First Name..." />
                     <label for="secondName">Second Name</label><input className="secondName" type="text" placeholder="Second Name..." />
