@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-//import './Homepage.css';
 
-class AllUsers extends Component {
+class Game extends Component {
     render() {
         return (
             <div>
@@ -12,4 +11,4 @@ class AllUsers extends Component {
     }
 }
 
-export default AllUsers;
+export default Game;

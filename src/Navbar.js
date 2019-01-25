@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, NavLink } from "react-router-dom";
-//import './Navbar.css';
 import Homepage from './Homepage.js';
-import Users from './Users.js';
-import Games from './Games.js';
+import Users from './UsersDOM.js';
+import Games from './GamesDOM.js';
 
 class Navbar extends Component {
     render() {
