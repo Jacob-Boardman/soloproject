@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import CreateUsers from './CreateUser';
+import UpdateUsers from './UpdateUser';
 
 
 class Users extends Component {
@@ -11,6 +12,7 @@ class Users extends Component {
                 </div>
                 <div>
                     <CreateUsers/>
+                    <UpdateUsers/>
                 </div>
             </div>
 

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import AllUsers from './AllUsers';
 //import './Homepage.css';
 
 class Homepage extends Component {
@@ -6,14 +7,14 @@ class Homepage extends Component {
         return (
             <div>
                 <div className="header">
-                    <h1>Game Matcher </h1>
+                    <h1>Game Matcher</h1>
                 </div>
-                <div className="userLogin">
-                    <form action="onSubmit">
-                        <input type="text" placeholder="Account Name..." />
-                        <input type="password" placeholder="Password..." />
-                        <input type="submit" value="Sumbit" />
-                    </form>
+                <div className="getAllUsers">
+                    <button className="getUserButton">See all users</button>
+                    <AllUsers/>
+                </div>
+                <div className="getAllGames">
+                <button className="getGameButton">See all Games</button>
                 </div>
             </div>
 

@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 //import './CreateUser.css';
 
-class CreateUser extends Component {
+class UpdateUser extends Component {
     render() {
         return (
-            <div className="createUser" >
-                <form className="userForm" action="onSubmit">
-                <h1 className="formTitle">Create A User</h1>
+            <div className=" updateUser" >
+                <form className="userForm">
+                <h1 className="formTitle">Update A User</h1>
                     <label for="firstName">First Name</label><input className="firstName" type="text" placeholder="First Name..." />
                     <label for="secondName">Second Name</label><input className="secondName" type="text" placeholder="Second Name..." />
                     <label for="age">Age</label><input className="age" type="number" placeholder="Age..." />
@@ -18,11 +18,10 @@ class CreateUser extends Component {
                         <option value="racing">Racing</option>
                         <option value="multiplayer">Multiplayer</option>
                     </select>
-                    <button className="userSubmit" >Create User</button>
+                    <input type="submit" value="Update User" className="userSubmit" />
                 </form>
             </div >
         );
     }
 }
-export default CreateUser;
-
+export default UpdateUser;
