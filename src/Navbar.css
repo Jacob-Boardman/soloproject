@@ -3,7 +3,7 @@
     
 }
 
-ul{
+.navBar ul{
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -14,16 +14,16 @@ ul{
     width: 100%;
 }
 
-li{
+.navBar li{
     float: left;
     border-right: 1.5px solid #B7D7D8;
 }
 
-li h3 {
+.navBar li h3 {
   margin: 0px;
 
 }
-li h3 a{
+.navBar li h3 a{
   display: block;
   color: white;
   text-align: center;
@@ -32,12 +32,12 @@ li h3 a{
   margin: 0px;  
 }
 
-li h3:hover {
+.navBar li h3:hover {
   background-color: #B7D7D8;
   color: black;
 }
 
-li:last-child {
+.navBar li:last-child {
   border-right: none;
 }
 

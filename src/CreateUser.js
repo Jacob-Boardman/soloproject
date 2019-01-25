@@ -1,13 +1,9 @@
 import React, { Component } from 'react';
-import './CreateUser.css';
-
-
-
+//import './CreateUser.css';
 
 class CreateUser extends Component {
     render() {
         return (
-            
             <div className="createUser" >
                 <form className="userForm" action="onSubmit">
                     <label for="firstName">First Name</label><input className="firstName" type="text" placeholder="First Name..." />

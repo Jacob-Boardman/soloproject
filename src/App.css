@@ -1,0 +1,162 @@
+
+@font-face{
+    font-family: 'Atraian';
+    src: url('./SFAtarianSystem.ttf');
+  }
+  
+  .header{
+    letter-spacing: 2px;
+    font-family: Atraian;
+    padding: 10px;
+    margin: 7vh;
+    background: #9CC2AF;
+    color: #343434;
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 1.3em;
+    border: 2px dashed #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 0 4px #9CC2AF, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
+    font-weight: normal;
+    text-align: center;
+  }
+  
+  .userLogin{
+    text-align: center;
+    padding: 5px;
+  }
+  
+  .userLogin input[type = text]{
+      width: 10%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #aaa;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-right: 5px;
+      margin-left: 5px;
+  }
+  
+  .userLogin input[type = password]{
+    width: 10%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+  
+  .userLogin input[type = submit]{
+    margin-left: 10px;
+    margin-right: 5px;
+    background-color: white; color: black;
+    line-height: 0.7em;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+  }
+
+  .navBar{
+    color: white;
+    
+}
+
+.navBar ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #79A7A8;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.navBar li{
+    float: left;
+    border-right: 1.5px solid #B7D7D8;
+}
+
+.navBar li h3 {
+  margin: 0px;
+
+}
+.navBar li h3 a{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  margin: 0px;  
+}
+
+.navBar li h3:hover {
+  background-color: #B7D7D8;
+  color: black;
+}
+
+.navBar li:last-child {
+  border-right: none;
+}
+
+.is-active{
+  background-color: #B7D7D8;
+  color: black;
+}
+
+.createUser{
+    padding: 20px;
+}
+
+.userForm {
+    width: 25%;
+    font-size: 16px;
+    padding: 5px;
+    background-color: whitesmoke;
+}
+
+label{
+    color: black;
+}
+
+.gameGenre {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+
+.firstName {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+
+  .secondName {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+
+  .age {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+
+  .userSubmit {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
