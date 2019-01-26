@@ -7,11 +7,11 @@
 .header{
     letter-spacing: 2px;
     font-family: Atraian;
-    padding: 10px;
+    padding: 0px;
     margin: 7vh;
     background: #9CC2AF;
     color: #343434;
-    font-size: 21px;
+    font-size: 32px;
     font-weight: bold;
     line-height: 1.3em;
     border: 2px dashed #fff;
@@ -19,6 +19,7 @@
     box-shadow: 0 0 0 4px #9CC2AF, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
     font-weight: normal;
     text-align: center;
+    text-shadow: -2px -2px #819e90;
   }
   
 .userLogin{
@@ -180,30 +181,48 @@ label{
     box-sizing: border-box;
   }
 
+  .homeGrid{
+    justify-items: stretch;
+    display: grid;
+    grid-template-columns: 50vw 50vw;
+  }
+
+  .getAllUsers{
+    display: inline-block;
+    width: 45vw;
+    margin: 0px;
+  }
+  .getAllGames{
+    display: inline-block;
+    width: 45vw;
+    margin: 0px;
+  }
+
   .getUserButton{
     float: left;
+    margin: 0px 20px 20px 5vw;
+    width: 40vw;
+    padding: 12px 20px;
+    box-sizing: border-box;
+}
+
+  .getGameButton{
+    float: right;
     margin: 0px 5vw 20px 20px;
     width: 40vw;
     padding: 12px 20px;
     box-sizing: border-box;
   }
 
-  .getGameButton{
-    float: right;
-    margin: 0px 20px 20px 5vw;
-    width: 40vw;
-    padding: 12px 20px;
-    box-sizing: border-box;
-  }
-
-  .user{
-    color: #343434;
-    word-wrap: break-word;
-    margin: 5px;
-    width: 15vw;
-    padding: 5px 5px;
-    background-color: whitesmoke;
-    border: 2px dashed #494949;
+  .results{
+    font-family: Atraian;
+    font-size: 24px;
+    color: black;
+    margin: 20px 5vw 5px 5vw;
+    max-width: 80%;
+    padding: 10px 0px 10px 10px;
+    background-color: #f7f7f7;
+    border: 2.4px dashed black;
     border-radius: 10px;
-    box-shadow: 0 0 0 4px whitesmoke, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
+    box-shadow: 0 0 0 7px #f7f7f7, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
 }

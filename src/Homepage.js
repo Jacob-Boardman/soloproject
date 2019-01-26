@@ -14,31 +14,45 @@ class Homepage extends Component {
 
     getUsers = () => {
         axios.get('http://localhost:8081/solo-project-games-api/api/user/getAllUsers').then(response => {
-                this.setState({ users: response.data });
-                console.log(this.state.users);
-            })
+            this.setState({ users: response.data });
+        })
+    }
+
+    getGames = () => {
+        axios.get('http://localhost:8081/solo-project-games-api/api/game/getAllGames').then(response => {
+            this.setState({ games: response.data });
+            console.log(this.state.games);
+        })
+    }
+
+    render() {
+        let userList = [];
+        for (let i of this.state.users) {
+            userList.push(<User user={i}/>)
         }
-        
-        render() {
-            let userList = [];
-            for (let i of this.state.users) {
-                userList.push(<User user={i} />)
-            }
-            
+
+        let gameList = [];
+        for(let i of this.state.games){
+            gameList.push(<Game game={i}/>)
+        }
+
         return (
             <div>
                 <div className="header">
                     <h1>Game Matcher</h1>
                 </div>
-                <div className="getAllUsers">
-                    <button className="getUserButton" onClick={this.getUsers}>See all Users</button>
-                    {userList}
-                </div>
-                <div className="getAllGames">
-                    <button className="getGameButton">See all Games</button>
-                    <Game />
-                </div>
-            </div>
+                <button className="getGameButton" onClick={this.getGames}>See all Games</button>
+                        <button className="getUserButton" onClick={this.getUsers}>See all Users</button>
+                        <br/><br/><br/><br/>
+                <div className="homeGrid">
+                    <div className="getAllUsers" class="item">
+                        {userList}
+                    </div>
+                    <div className="getAllGames" class="item">
+                        {gameList}
+                    </div>
+                </div >
+            </div >
 
         );
     }

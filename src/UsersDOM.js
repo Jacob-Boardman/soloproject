@@ -10,7 +10,7 @@ class Users extends Component {
                 <div className="header">
                     <h1>User Database</h1>
                 </div>
-                <div>
+                <div class="userDom">
                     <CreateUsers/>
                     <UpdateUsers/>
                 </div>
