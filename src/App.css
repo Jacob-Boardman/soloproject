@@ -4,7 +4,7 @@
     src: url('./SFAtarianSystem.ttf');
   }
   
-  .header{
+.header{
     letter-spacing: 2px;
     font-family: Atraian;
     padding: 10px;
@@ -21,12 +21,12 @@
     text-align: center;
   }
   
-  .userLogin{
+.userLogin{
     text-align: center;
     padding: 5px;
   }
   
-  .userLogin input[type = text]{
+.userLogin input[type = text]{
       width: 10%;
       padding: 12px 20px;
       margin: 8px 0;
@@ -38,7 +38,7 @@
       margin-left: 5px;
   }
   
-  .userLogin input[type = password]{
+.userLogin input[type = password]{
     width: 10%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -50,7 +50,7 @@
     margin-left: 5px;
   }
   
-  .userLogin input[type = submit]{
+.userLogin input[type = submit]{
     margin-left: 10px;
     margin-right: 5px;
     background-color: white; color: black;
@@ -63,7 +63,7 @@
     border-radius: 5px;
   }
 
-  .navBar{
+.navBar{
     color: white;
     
 }
@@ -196,5 +196,14 @@ label{
     box-sizing: border-box;
   }
 
-
-
+  .user{
+    color: #343434;
+    word-wrap: break-word;
+    margin: 5px;
+    width: 15vw;
+    padding: 5px 5px;
+    background-color: whitesmoke;
+    border: 2px dashed #494949;
+    border-radius: 10px;
+    box-shadow: 0 0 0 4px whitesmoke, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
+}

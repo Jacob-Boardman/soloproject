@@ -13,21 +13,18 @@ class Homepage extends Component {
     }
 
     getUsers = () => {
-        axios.get('http://localhost:8081/solo-project-games-api/api/user/getAllUsers')
-            .then(response => {
+        axios.get('http://localhost:8081/solo-project-games-api/api/user/getAllUsers').then(response => {
                 this.setState({ users: response.data });
+                console.log(this.state.users);
             })
-        
-        let userList = [];
-        for (let i of this.response.data) {
-            userList.push(<User user={i} />)
         }
-
-        console.log(userList);
-    }
-
-    render() {
-
+        
+        render() {
+            let userList = [];
+            for (let i of this.state.users) {
+                userList.push(<User user={i} />)
+            }
+            
         return (
             <div>
                 <div className="header">
@@ -35,7 +32,7 @@ class Homepage extends Component {
                 </div>
                 <div className="getAllUsers">
                     <button className="getUserButton" onClick={this.getUsers}>See all Users</button>
-                    <User />
+                    {userList}
                 </div>
                 <div className="getAllGames">
                     <button className="getGameButton">See all Games</button>
