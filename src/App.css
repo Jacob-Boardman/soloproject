@@ -112,16 +112,17 @@
   color: black;
 }
 
+.userDOM{
+    display:grid;
+    grid-template-columns: 25vw 25vw 25vw 25vw;
+}
+
 .createUser{
-    width: 25%;
-    float: left;
     padding-left: 20px;
     padding-right: 20px;
 }
 
 .updateUser{
-    width: 25%;
-    float: left;
     padding-left: 20px;
     padding-right: 20px;
 }
@@ -226,3 +227,4 @@ label{
     border-radius: 10px;
     box-shadow: 0 0 0 7px #f7f7f7, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
 }
+

@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import CreateUsers from './CreateUser';
 import UpdateUsers from './UpdateUser';
+import DeleteUser from './DeleteUser';
+import FindUser from './FindUser';
 
 
 class Users extends Component {
@@ -10,9 +12,11 @@ class Users extends Component {
                 <div className="header">
                     <h1>User Database</h1>
                 </div>
-                <div class="userDom">
+                <div class="userDOM">
                     <CreateUsers/>
                     <UpdateUsers/>
+                    <DeleteUser/>
+                    <FindUser/>
                 </div>
             </div>
 
