@@ -3,6 +3,7 @@ import CreateUsers from './CreateUser';
 import UpdateUsers from './UpdateUser';
 import DeleteUser from './DeleteUser';
 import FindUser from './FindUser';
+import DisplayMessage from './DisplayMessage';
 
 
 class Users extends Component {
@@ -15,9 +16,13 @@ class Users extends Component {
                 <div class="userDOM">
                     <CreateUsers/>
                     <UpdateUsers/>
-                    <DeleteUser/>
-                    <FindUser/>
+                    <div>
+                        <DeleteUser/>
+                        <FindUser/>
+                    </div>
+                    <DisplayMessage/>
                 </div>
+                
             </div>
 
         );

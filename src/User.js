@@ -5,6 +5,8 @@ class AllUsers extends Component {
         return (
             <div className="results">
                 <form>
+                    ID:&nbsp;{this.props.user.id}
+                    <br/>
                     First Name:&nbsp;{this.props.user.firstName}
                     <br/>
                     Second Name:&nbsp;{this.props.user.secondName}
