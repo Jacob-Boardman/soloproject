@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import CreateUsers from './CreateUser';
-import UpdateUsers from './UpdateUser';
-import DeleteUser from './DeleteUser';
-import FindUser from './FindUser';
-import DisplayMessage from './DisplayMessage';
+import CreateUsers from './CreateUser.js';
+import UpdateUsers from './UpdateUser.js';
+import DeleteUser from './DeleteUser.js';
+import FindUser from './FindUser.js';
+import DisplayMessage from '../DisplayMessage.js';
 
 
 class Users extends Component {

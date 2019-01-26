@@ -1,7 +1,7 @@
 
 @font-face{
   font-family: 'Atraian';
-  src: url('./SFAtarianSystem.ttf');
+  src: url('../Font/SFAtarianSystem.ttf');
 }
 
 .header{

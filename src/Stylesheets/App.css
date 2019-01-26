@@ -1,7 +1,7 @@
 
 @font-face{
     font-family: 'Atraian';
-    src: url('./SFAtarianSystem.ttf');
+    src: url('../Fonts/SFAtarianSystem.ttf');
   }
   
 .header{
@@ -147,6 +147,10 @@ label{
     color: black;
 }
 
+.findUser{
+    margin-top: 40px;
+}
+
 .firstName {
     width: 100%;
     padding: 12px 20px;
@@ -162,6 +166,12 @@ label{
 }
 
 .age {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+.id {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;

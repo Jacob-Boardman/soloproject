@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import User from './User';
-import Game from './Game';
+import User from './User/User.js';
+import Game from './Game/Game.js';
 import axios from 'axios';
 
 class Homepage extends Component {

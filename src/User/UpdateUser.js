@@ -5,7 +5,8 @@ class UpdateUser extends Component {
         return (
             <div className=" updateUser" >
                 <form className="userForm">
-                <h1 className="formTitle">Update A User</h1>
+                    <h1 className="formTitle">Update A User</h1>
+                    <label for="id">ID</label><input className="id" type="number" placeholder="ID of account to update" required />
                     <label for="firstName">First Name</label><input className="firstName" type="text" placeholder="First Name..." />
                     <label for="secondName">Second Name</label><input className="secondName" type="text" placeholder="Second Name..." />
                     <label for="age">Age</label><input className="age" type="number" placeholder="Age..." />
@@ -17,7 +18,7 @@ class UpdateUser extends Component {
                         <option value="racing">Racing</option>
                         <option value="multiplayer">Multiplayer</option>
                     </select>
-                    <input type="submit" value="Update User" className="userSubmit" />
+                    <button className="userSubmit" >Update User</button>
                 </form>
             </div >
         );
