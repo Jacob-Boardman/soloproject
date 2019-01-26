@@ -11,7 +11,7 @@ class UpdateUser extends Component {
                     <label for="secondName">Second Name</label><input className="secondName" type="text" placeholder="Second Name..." />
                     <label for="age">Age</label><input className="age" type="number" placeholder="Age..." />
                     <label for="gameGenre">Favourite Game genre</label><select className="gameGenre" >
-                        <option>Select a Game genre</option>
+                        <option value="" disabled selected>Select a Genre</option>
                         <option value="rpg">RPG</option>
                         <option value="shooter">Shooter</option>
                         <option value="strategy">Strategy</option>

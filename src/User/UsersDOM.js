@@ -7,13 +7,20 @@ import DisplayMessage from '../DisplayMessage.js';
 
 
 class Users extends Component {
+constructor(){
+    super();
+    this.state={
+        message : ""
+    }
+}
+
     render() {
         return (
             <div>
                 <div className="header">
                     <h1>User Database</h1>
                 </div>
-                <div class="userDOM">
+                <div className="userDOM">
                     <CreateUsers/>
                     <UpdateUsers/>
                     <div>
