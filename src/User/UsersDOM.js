@@ -15,8 +15,7 @@ class Users extends Component {
     }
 
     setMessage = (inputMessage) => {
-        this.setState({message: inputMessage})
-        console.log(inputMessage);
+        this.setState({message: inputMessage});
     }
 
     render() {

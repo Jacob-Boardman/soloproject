@@ -19,8 +19,7 @@ class CreateUser extends Component {
             age: this.state.age,
             gameGenre: this.state.gameGenre
         }).then(response => {
-            this.props.message(response);
-            console.log(response);
+            this.props.message(response.data);
         });
     }
 
@@ -55,7 +54,7 @@ class CreateUser extends Component {
     render() {
         return (
             <div className="createUser" >
-                <form className="userForm">
+                <form className="userForm" onSubmit={(e) => e.preventDefault()}>
                     <h1 className="formTitle">Create A User</h1>
                     <label htmlfor="firstName">First Name</label><input className="firstName" type="text" placeholder="First Name..." onChange={this.handleChange} required />
                     <label htmlfor="secondName">Second Name</label><input className="secondName" type="text" placeholder="Second Name..." onChange={this.handleChange} required />
@@ -68,7 +67,7 @@ class CreateUser extends Component {
                         <option value="racing">Racing</option>
                         <option value="multiplayer">Multiplayer</option>
                     </select>
-                    <button type="submit" className="userSubmit" onClick={this.createUser}>Create User</button>
+                    <button  className="userSubmit" onClick={() => {this.createUser()}}>Create User</button>
                 </form>
             </div >
         );

@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class DisplayMessage extends Component {
     render() {
         return (        
-            <div>
+            <div className="displayMessage">
                  {this.props.message}
             </div>
         );
