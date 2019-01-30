@@ -45,10 +45,10 @@ class Homepage extends Component {
                         <button className="getUserButton" onClick={this.getUsers}>See all Users</button>
                         <br/><br/><br/><br/>
                 <div className="homeGrid">
-                    <div className="getAllUsers" class="item">
+                    <div className="item">
                         {userList}
                     </div>
-                    <div className="getAllGames" class="item">
+                    <div className="item">
                         {gameList}
                     </div>
                 </div >

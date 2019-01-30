@@ -5,7 +5,6 @@ class CreateUser extends Component {
     constructor() {
         super();
         this.state = {
-            message: "",
             firstName: "",
             secondName: "",
             age: 0,
@@ -20,8 +19,8 @@ class CreateUser extends Component {
             age: this.state.age,
             gameGenre: this.state.gameGenre
         }).then(response => {
-            this.setState({ message: response });
-            console.log(this.state.message);
+            this.props.message(response);
+            console.log(response);
         });
     }
 
@@ -32,14 +31,13 @@ class CreateUser extends Component {
                 this.setState({
                     firstName: event.target.value
                 })
-                console.log(this.state.firstName)
                 break;
             case "secondName":
                 this.setState({
                     secondName: event.target.value
                 })
                 break;
-            case "ageName":
+            case "age":
                 this.setState({
                     age: event.target.value
                 })
@@ -59,10 +57,10 @@ class CreateUser extends Component {
             <div className="createUser" >
                 <form className="userForm">
                     <h1 className="formTitle">Create A User</h1>
-                    <label for="firstName">First Name</label><input className="firstName" type="text" placeholder="First Name..." onChange={this.handleChange} required />
-                    <label for="secondName">Second Name</label><input className="secondName" type="text" placeholder="Second Name..." onChange={this.handleChange} required />
-                    <label for="age">Age</label><input className="age" type="number" placeholder="Age..." onChange={this.handleChange} required />
-                    <label for="gameGenre">Favourite Game genre</label><select className="gameGenre" onChange={this.handleChange} required>
+                    <label htmlfor="firstName">First Name</label><input className="firstName" type="text" placeholder="First Name..." onChange={this.handleChange} required />
+                    <label htmlfor="secondName">Second Name</label><input className="secondName" type="text" placeholder="Second Name..." onChange={this.handleChange} required />
+                    <label htmlfor="age">Age</label><input className="age" type="number" placeholder="Age..." onChange={this.handleChange} required />
+                    <label htmlfor="gameGenre">Favourite Game genre</label><select className="gameGenre" onChange={this.handleChange} required>
                         <option value="" disabled selected>Select a Genre</option>
                         <option value="rpg">RPG</option>
                         <option value="shooter">Shooter</option>
@@ -70,7 +68,7 @@ class CreateUser extends Component {
                         <option value="racing">Racing</option>
                         <option value="multiplayer">Multiplayer</option>
                     </select>
-                    <button type="button" className="userSubmit" onClick={this.createUser}>Create User</button>
+                    <button type="submit" className="userSubmit" onClick={this.createUser}>Create User</button>
                 </form>
             </div >
         );

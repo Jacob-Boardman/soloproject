@@ -7,12 +7,17 @@ import DisplayMessage from '../DisplayMessage.js';
 
 
 class Users extends Component {
-constructor(){
-    super();
-    this.state={
-        message : ""
+    constructor() {
+        super();
+        this.state = {
+            message: "Hello"
+        }
     }
-}
+
+    setMessage = (inputMessage) => {
+        this.setState({message: inputMessage})
+        console.log(inputMessage);
+    }
 
     render() {
         return (
@@ -21,15 +26,15 @@ constructor(){
                     <h1>User Database</h1>
                 </div>
                 <div className="userDOM">
-                    <CreateUsers/>
-                    <UpdateUsers/>
+                    <CreateUsers message={this.setMessage}/>
+                    <UpdateUsers />
                     <div>
-                        <DeleteUser/>
-                        <FindUser/>
+                        <DeleteUser />
+                        <FindUser />
                     </div>
-                    <DisplayMessage/>
+                    <DisplayMessage message={this.state.message}/>
                 </div>
-                
+
             </div>
 
         );

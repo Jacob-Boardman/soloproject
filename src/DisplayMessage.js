@@ -4,7 +4,7 @@ class DisplayMessage extends Component {
     render() {
         return (        
             <div>
-                 SAMPLE MESSAGE
+                 {this.props.message}
             </div>
         );
     }
