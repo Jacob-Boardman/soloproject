@@ -2,9 +2,13 @@ import React, { Component } from 'react';
 
 class DisplayMessage extends Component {
     render() {
-        return (        
+        return (
             <div className="displayMessage">
-                 {this.props.message}
+                <div className="message">
+                    <h1>Message</h1>
+                    <br/>
+                    {this.props.message}
+                </div>
             </div>
         );
     }

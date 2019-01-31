@@ -25,7 +25,7 @@ class DeleteUser extends Component {
     render() {
         return (
             <div className="deleteUser">
-                <form className="userForm">
+                <form className="userForm" onSubmit={(e) => e.preventDefault()>
                     <h1 className="formTitle">Delete A User</h1>
                     <label for="id">ID</label><input className="id" type="number" placeholder="ID of account to Delete" onChange={this.handleChange} required />
                     <button type="submit" className="userSubmit" onClick={this.deleteUser}>Delete User</button>

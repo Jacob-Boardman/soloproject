@@ -127,6 +127,16 @@
     padding-right: 20px;
 }
 
+.deleteUser{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.findUser{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
 .formTitle{
     margin: 0px 0px 10px 0px;
     padding-bottom: 5px;
@@ -236,5 +246,26 @@ label{
     border: 2.4px dashed black;
     border-radius: 10px;
     box-shadow: 0 0 0 7px #f7f7f7, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
+}
+
+.message{
+    color: black;
+    font-family: Atraian;
+    font-size: 20px;
+    padding: 10px;
+    background-color: whitesmoke;
+    border: 2px dashed #494949;
+    border-radius: 10px;
+    box-shadow: 0 0 0 4px whitesmoke, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
+}
+
+.message h1{
+    border-bottom: #494949 solid 1px;
+}
+
+.displayMessage{
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 

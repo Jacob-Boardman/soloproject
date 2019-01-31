@@ -10,7 +10,7 @@ class Users extends Component {
     constructor() {
         super();
         this.state = {
-            message: "Hello"
+            message: ""
         }
     }
 
