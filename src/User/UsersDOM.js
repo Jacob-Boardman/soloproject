@@ -6,7 +6,7 @@ import FindUser from './FindUser.js';
 import DisplayMessage from '../DisplayMessage.js';
 
 
-class Users extends Component {
+class UsersDom extends Component {
     constructor() {
         super();
         this.state = {
@@ -40,4 +40,4 @@ class Users extends Component {
     }
 }
 
-export default Users;
+export default UsersDom;
