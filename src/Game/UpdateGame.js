@@ -21,7 +21,7 @@ class UpdateGame extends Component {
             ageRating: this.state.ageRating,
             gameGenre: this.state.gameGenre
         }).then(response => {
-            this.setState({ message: response.data })
+            this.props.message(response.data)
         })
     }
 

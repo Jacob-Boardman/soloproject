@@ -28,9 +28,9 @@ class GamesDom extends Component {
                 </div>
                 <div className="gameDOM">
                     <CreateGames message={this.setMessage}/>
-                    <UpdateGames />
+                    <UpdateGames message={this.setMessage}/>
                     <div>
-                        <DeleteGame />
+                        <DeleteGame message={this.setMessage}/>
                         <FindGame />
                     </div>
                     <DisplayMessage message={this.state.message}/>

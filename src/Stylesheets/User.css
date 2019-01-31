@@ -24,6 +24,7 @@
 }
 
 .findUser {
+    margin-top: 40px;
     padding-left: 20px;
     padding-right: 20px;
 }
@@ -63,10 +64,6 @@
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
-}
-
-.findUser {
-    margin-top: 40px;
 }
 
 .userSubmit {

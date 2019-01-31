@@ -21,7 +21,6 @@ class Homepage extends Component {
     getGames = () => {
         axios.get('http://localhost:8081/solo-project-games-api/api/game/getAllGames').then(response => {
             this.setState({ games: response.data });
-            console.log(this.state.games);
         })
     }
 
