@@ -64,78 +64,15 @@
     border-radius: 5px;
   }
 
-.navBar{
-    color: white;
-    
-}
-
-.navBar ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    position: fixed;
-    background-color: #79A7A8;
-    top: 0;
-    width: 100%;
-}
-
-.navBar li{
-    float: left;
-    border-right: 1.5px solid #B7D7D8;
-}
-
-.navBar li h3 {
-  margin: 0px;
-
-}
-.navBar li h3 a{
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  margin: 0px;  
-}
-
-.navBar li h3:hover {
-  background-color: #B7D7D8;
-  color: black;
-}
-
-.navBar li:last-child {
-  border-right: none;
-}
 
 .is-active{
   background-color: #B7D7D8;
   color: black;
 }
 
-.userDOM{
-    display:grid;
-    grid-template-columns: 25vw 25vw 25vw 25vw;
-}
 
-.createUser{
-    padding-left: 20px;
-    padding-right: 20px;
-}
 
-.updateUser{
-    padding-left: 20px;
-    padding-right: 20px;
-}
 
-.deleteUser{
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-.findUser{
-    padding-left: 20px;
-    padding-right: 20px;
-}
 
 .formTitle{
     margin: 0px 0px 10px 0px;
@@ -144,22 +81,10 @@
     color: black;
 }
 
-.userForm {
-    font-size: 16px;
-    padding: 10px;
-    background-color: whitesmoke;
-    border: 2px dashed #494949;
-    border-radius: 10px;
-    box-shadow: 0 0 0 4px whitesmoke, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
-}
-
 label{
     color: black;
 }
 
-.findUser{
-    margin-top: 40px;
-}
 
 .firstName {
     width: 100%;
@@ -181,6 +106,7 @@ label{
     margin: 8px 0;
     box-sizing: border-box;
 }
+
 .id {
     width: 100%;
     padding: 12px 20px;
@@ -188,52 +114,13 @@ label{
     box-sizing: border-box;
 }
 
-.gameGenre {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-  }
-
-.userSubmit {
-    width: 50%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-  }
-
-  .homeGrid{
-    justify-items: stretch;
-    display: grid;
-    grid-template-columns: 50vw 50vw;
-  }
-
-  .getAllUsers{
-    display: inline-block;
-    width: 45vw;
-    margin: 0px;
-  }
-  .getAllGames{
-    display: inline-block;
-    width: 45vw;
-    margin: 0px;
-  }
-
-  .getUserButton{
-    float: left;
-    margin: 0px 20px 20px 5vw;
-    width: 40vw;
-    padding: 12px 20px;
-    box-sizing: border-box;
+.homeGrid{
+  justify-items: stretch;
+  display: grid;
+  grid-template-columns: 50vw 50vw;
 }
 
-  .getGameButton{
-    float: right;
-    margin: 0px 5vw 20px 20px;
-    width: 40vw;
-    padding: 12px 20px;
-    box-sizing: border-box;
-  }
+
 
   .results{
     font-family: Atraian;

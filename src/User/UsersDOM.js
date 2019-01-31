@@ -4,6 +4,7 @@ import UpdateUsers from './UpdateUser.js';
 import DeleteUser from './DeleteUser.js';
 import FindUser from './FindUser.js';
 import DisplayMessage from '../DisplayMessage.js';
+import '../Stylesheets/User.css';
 
 
 class UsersDom extends Component {

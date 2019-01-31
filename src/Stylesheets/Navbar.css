@@ -1,44 +1,44 @@
 .navBar{
-    color: white;
-    
+  color: white;
+  
 }
 
 .navBar ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #79A7A8;
-    position: fixed;
-    top: 0;
-    width: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: fixed;
+  background-color: #79A7A8;
+  top: 0;
+  width: 100%;
 }
 
 .navBar li{
-    float: left;
-    border-right: 1.5px solid #B7D7D8;
+  float: left;
+  border-right: 1.5px solid #B7D7D8;
 }
 
 .navBar li h3 {
-  margin: 0px;
+margin: 0px;
 
 }
 .navBar li h3 a{
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  margin: 0px;  
+display: block;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+margin: 0px;  
 }
 
 .navBar li h3:hover {
-  background-color: #B7D7D8;
-  color: black;
+background-color: #B7D7D8;
+color: black;
 }
 
 .navBar li:last-child {
-  border-right: none;
+border-right: none;
 }
 
 .is-active{

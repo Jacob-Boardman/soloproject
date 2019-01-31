@@ -4,6 +4,7 @@ import UpdateGames from './UpdateGame.js';
 import DeleteGame from './DeleteGame.js';
 import FindGame from './FindGame.js';
 import DisplayMessage from '../DisplayMessage.js';
+import '../Stylesheets/Game.css';
 
 
 class GamesDom extends Component {
@@ -13,13 +14,19 @@ class GamesDom extends Component {
             message: ""
         }
     }
+
+    
+    setMessage = (inputMessage) => {
+        this.setState({message: inputMessage});
+    }
+
     render() {
         return (
             <div>
                 <div className="header">
                     <h1>Game Database</h1>
                 </div>
-                <div className="GameDOM">
+                <div className="gameDOM">
                     <CreateGames message={this.setMessage}/>
                     <UpdateGames />
                     <div>

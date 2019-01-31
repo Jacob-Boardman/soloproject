@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, NavLink } from "react-router-dom";
 import Homepage from './Homepage.js';
 import UsersDOM from './User/UsersDOM.js';
 import GamesDOM from './Game/GamesDOM.js';
+import './Stylesheets/Navbar.css';
 
 class Navbar extends Component {
     render() {
