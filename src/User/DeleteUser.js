@@ -13,12 +13,11 @@ class DeleteUser extends Component {
 
     deleteUser = () => {
         axios.delete('http://localhost:8081/solo-project-games-api/api/user/deleteUser/' + this.state.id)
-        .then(response => this.setState({message : response.data}))
+        .then(response => this.props.message(response.data))
     }
 
     handleChange = (event) => {
         this.setState({id : event.target.value})
-
         event.preventDefault();
     }
 

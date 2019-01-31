@@ -67,7 +67,7 @@ class CreateUser extends Component {
                         <option value="racing">Racing</option>
                         <option value="multiplayer">Multiplayer</option>
                     </select>
-                    <button  className="userSubmit" onClick={() => {this.createUser()}}>Create User</button>
+                    <button className="userSubmit" onClick={() => { this.createUser() }}>Create User</button>
                 </form>
             </div >
         );

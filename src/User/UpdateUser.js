@@ -22,7 +22,7 @@ class UpdateUser extends Component {
             age: this.state.age,
             gameGenre: this.state.gameGenre
         }).then(response => {
-            this.setState({ message: response })
+            this.props.message(response.data)
         })
     }
 

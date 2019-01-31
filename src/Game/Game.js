@@ -5,8 +5,7 @@ class Game extends Component {
         return (
             <div className="results">
                 <form>
-                    ID:&nbsp;{this.props.game.id}
-                    <br/>
+                    <h2 className="formTitle">Game&nbsp;{+ this.props.game.id}</h2>
                     Title:&nbsp;{this.props.game.title}
                     <br />
                     Age Rating:&nbsp;{this.props.game.ageRating}

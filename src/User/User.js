@@ -5,14 +5,13 @@ class AllUsers extends Component {
         return (
             <div className="results">
                 <form>
-                    ID:&nbsp;{this.props.user.id}
-                    <br/>
+                    <h2 className="formTitle">User&nbsp;{+ this.props.user.id}</h2>
                     First Name:&nbsp;{this.props.user.firstName}
-                    <br/>
+                    <br />
                     Second Name:&nbsp;{this.props.user.secondName}
-                    <br/>
+                    <br />
                     Age:&nbsp;{this.props.user.age}
-                    <br/>
+                    <br />
                     Favourite Game genre:&nbsp;{this.props.user.gameGenre}
                 </form>
             </div>
