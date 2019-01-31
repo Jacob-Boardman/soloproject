@@ -1,53 +1,50 @@
-@font-face{
+@font-face {
     font-family: 'Atraian';
     src: url('../Fonts/SFAtarianSystem.ttf');
-  }
+}
 
-  .gameGenre {
+.gameGenre {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
-  }
+}
 
-
-
-
-  .getAllGames{
+.getAllGames {
     display: inline-block;
     width: 45vw;
     margin: 0px;
-  }
+}
 
-
-  .getGameButton{
+.getGameButton {
     float: right;
     margin: 0px 5vw 20px 20px;
     width: 40vw;
     padding: 12px 20px;
     box-sizing: border-box;
-  }
+}
 
-.gameDOM{
-    display:grid;
+.gameDOM {
+    display: grid;
     grid-template-columns: 25vw 25vw 25vw 25vw;
 }
-.createGame{
+
+.createGame {
     padding-left: 20px;
     padding-right: 20px;
 }
 
-.updateGame{
+.updateGame {
     padding-left: 20px;
     padding-right: 20px;
 }
 
-.deleteGame{
+.deleteGame {
     padding-left: 20px;
     padding-right: 20px;
 }
 
-.findGame{
+.findGame {
     padding-left: 20px;
     padding-right: 20px;
 }
