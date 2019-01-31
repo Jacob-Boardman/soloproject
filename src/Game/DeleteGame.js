@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 
-class DeleteUser extends Component {
+class DeleteGame extends Component {
 
     constructor() {
         super();
@@ -11,8 +11,8 @@ class DeleteUser extends Component {
         }
     }
 
-    deleteUser = () => {
-        axios.delete('http://localhost:8081/solo-project-games-api/api/user/deleteUser/' + this.state.id)
+    deleteGame = () => {
+        axios.delete('http://localhost:8081/solo-project-games-api/api/game/deleteGame/' + this.state.id)
         .then(response => this.setState({message : response}))
     }
 
@@ -24,14 +24,14 @@ class DeleteUser extends Component {
 
     render() {
         return (
-            <div className="deleteUser">
-                <form className="userForm" onSubmit={(e) => e.preventDefault()}>
-                    <h1 className="formTitle">Delete A User</h1>
+            <div className="deleteGame">
+                <form className="gameForm" onSubmit={(e) => e.preventDefault()}>
+                    <h1 className="formTitle">Delete A Game</h1>
                     <label for="id">ID</label><input className="id" type="number" placeholder="ID of account to Delete" onChange={this.handleChange} required />
-                    <button type="submit" className="userSubmit" onClick={this.deleteUser}>Delete User</button>
+                    <button type="submit" className="gameSubmit" onClick={this.deleteGame}>Delete Game</button>
                 </form>
             </div>
         );
     }
 }
-export default DeleteUser;
+export default DeleteGame;

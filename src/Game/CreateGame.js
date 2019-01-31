@@ -29,7 +29,7 @@ class CreateGame extends Component {
                     title: event.target.value
                 })
                 break;
-            case "rating":
+            case "ageRating":
                 this.setState({
                     ageRating: event.target.value
                 })

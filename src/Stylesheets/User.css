@@ -44,6 +44,27 @@
     box-shadow: 0 0 0 4px whitesmoke, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
 }
 
+.firstName {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+.secondName {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+.age {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
 .findUser {
     margin-top: 40px;
 }

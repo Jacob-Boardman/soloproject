@@ -27,9 +27,9 @@ class UsersDom extends Component {
                 </div>
                 <div className="userDOM">
                     <CreateUsers message={this.setMessage}/>
-                    <UpdateUsers />
+                    <UpdateUsers message={this.setMessage}/>
                     <div>
-                        <DeleteUser />
+                        <DeleteUser message={this.setMessage}/>
                         <FindUser />
                     </div>
                     <DisplayMessage message={this.state.message}/>
