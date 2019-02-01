@@ -20,10 +20,10 @@ class FindUser extends Component {
     render() {
         return (
             <div className="findUser">
-                <form className="userForm" onSubmit={(e) => e.preventDefault()}>
+                <form className="userForm" onSubmit={this.changeId}>
                     <h1 className="formTitle">Find A User</h1>
                     <label for="id">ID</label><input className="id" type="number" placeholder="ID of account to Find" onChange={this.handleChange} required />
-                    <button className="userSubmit" onClick={this.changeId}>Find User</button>
+                    <button className="userSubmit" type="submit">Find User</button>
                 </form>
             </div>
         );

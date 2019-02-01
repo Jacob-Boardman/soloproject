@@ -57,7 +57,7 @@ class UpdateGame extends Component {
     render() {
         return (
             <div className=" updateGame" >
-                <form className="gameForm" onSubmit={(e) => e.preventDefault()}>
+                <form className="gameForm" onSubmit={this.updateGame()}>
                     <h1 className="formTitle">Update A Game</h1>
                     <label htmlfor="id">ID</label><input className="id" type="number" placeholder="ID of Game to update" onChange={this.handleChange} required />
                     <label htmlfor="title">Game Title</label><input className="title" type="text" placeholder="Title..." onChange={this.handleChange} required />
@@ -70,7 +70,7 @@ class UpdateGame extends Component {
                         <option value="racing">Racing</option>
                         <option value="multiplayer">Multiplayer</option>
                     </select>
-                    <button  className="gameSubmit" onClick={() => {this.updateGame()}}>Update Game</button>
+                    <button  className="gameSubmit" type="submit">Update Game</button>
                 </form>
             </div >
         );
