@@ -23,7 +23,7 @@ class GamesDom extends Component {
     }
 
     getGameById = (gameId) => {
-        axios.get('http://localhost:8081/solo-project-games-api/api/game/getGameById/' + gameId).then(response => {
+        axios.get('http://35.242.187.147:8081/solo-project-games-api/api/game/getGameById/' + gameId).then(response => {
             this.setState({ game: response.data })
         })
     }
