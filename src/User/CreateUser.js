@@ -54,7 +54,7 @@ class CreateUser extends Component {
     render() {
         return (
             <div className="createUser" >
-                <form className="userForm" onSubmit={this.createUser}>
+                <form className="userForm" onSubmit={() => this.createUser}>
                     <h1 className="formTitle">Create A User</h1>
                     <label htmlfor="firstName">First Name</label><input className="firstName" type="text" placeholder="First Name..." onChange={this.handleChange} required />
                     <label htmlfor="secondName">Second Name</label><input className="secondName" type="text" placeholder="Second Name..." onChange={this.handleChange} required />
