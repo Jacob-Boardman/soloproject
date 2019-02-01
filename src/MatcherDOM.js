@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import Game from './Game/Game.js';
 import User from './User/User.js';
 import './Stylesheets/Matcher.css';
 
@@ -8,7 +9,8 @@ class MatcherDOM extends Component {
         super();
         this.state = {
             id: 0,
-            user : ""
+            user : [],
+            games : []
         }
     }
 
@@ -20,19 +22,23 @@ class MatcherDOM extends Component {
     getUserById = () => {
         axios.get('http://localhost:8081/solo-project-games-api/api/user/getUserById/'+ this.state.id).then(response => {
             this.setState({ user: response.data })
-            console.log(this.state.user);
-            //this.getGames();
+            this.getGames();
         })
     }
 
-    getGame = () => {
-        axios.get('http://localhost:8081/solo-project-games-api/api/game/getGameByGenre/'+ this.user.gameGenre)
+    getGames = () => {
+        axios.get('http://localhost:8081/solo-project-games-api/api/game/getGameByGenre/'+ this.state.user.gameGenre).then(response => {
+            this.setState({games: response.data});
+        })
     }
 
     //this.getUserById
 
     render() {
-        let games = [];
+        let gamesList = [];
+        for(let i of this.state.games){
+            gamesList.push(<Game game={i}/>);
+        }
 
         return (
             <div className="gameMatcher">
@@ -41,18 +47,20 @@ class MatcherDOM extends Component {
                 </div>
                 <div className="matcherDOM">
                     <div className="findUser">
-                        <form className="userForm" onSubmit={(e) => e.preventDefult()}>
+                        <form className="userForm" onSubmit={(e)=> e.preventDefault()}>
                             <h1 className="formTitle">Find A User</h1>
-                            <label for="id">ID</label><input className="id" type="number" placeholder="ID of account to Find" onChange={this.handleChange} required />
-                            <button className="userSubmit" onclick={this.getUserById}>Match Games</button>
+                            <label htmlfor="id">ID</label><input className="id" type="number" placeholder="ID of account to Find" onChange={this.handleChange} required />
+                            <button className="userSubmit" onClick={this.getUserById}>Match Games</button>
                         </form>
+                        <User user={this.state.user} />
                     </div>
                     <div>
-                        Test Text
+                        {gamesList}
                     </div>
                 </div>
             </div>
-        )
+            
+        );
     }
 }
 
