@@ -14,7 +14,11 @@ class FindUser extends Component {
     }
 
     changeId = () => {
-        this.props.user(this.state.id);
+        function handleClick(e) {
+            e.preventDefault();
+            this.props.user(this.state.id);
+          }
+
     }
 
     render() {
@@ -23,7 +27,7 @@ class FindUser extends Component {
                 <form className="userForm" onSubmit={this.changeId}>
                     <h1 className="formTitle">Find A User</h1>
                     <label for="id">ID</label><input className="id" type="number" placeholder="ID of account to Find" onChange={this.handleChange} required />
-                    <button className="userSubmit" type="button">Find User</button>
+                    <button className="userSubmit" type="submit">Find User</button>
                 </form>
             </div>
         );
