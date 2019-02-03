@@ -13,15 +13,18 @@ class FindGame extends Component {
     }
 
     changeId = () => {
-        this.props.game(this.state.id);
+        function handleClick(e) {
+            e.preventDefault();
+            this.props.game(this.state.id);
+          }
     }
     render() {
         return (
             <div className="findGame">
-                <form className="gameForm" onSubmit={this.changeId}>
+                <form className="gameForm">
                     <h1 className="formTitle">Find A Game</h1>
                     <label for="id">ID</label><input className="id" type="number" placeholder="ID of account to Find" onChange={this.handleChange} required />
-                    <button className="gameSubmit" type="submit">Find Game</button>
+                    <button className="gameSubmit" type="button" onClick={this.changeId}>Find Game</button>
                 </form>
             </div>
         );
