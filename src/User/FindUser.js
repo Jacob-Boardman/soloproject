@@ -23,7 +23,7 @@ class FindUser extends Component {
                 <form className="userForm" onSubmit={this.changeId}>
                     <h1 className="formTitle">Find A User</h1>
                     <label for="id">ID</label><input className="id" type="number" placeholder="ID of account to Find" onChange={this.handleChange} required />
-                    <button className="userSubmit" type="submit">Find User</button>
+                    <button className="userSubmit" type="button">Find User</button>
                 </form>
             </div>
         );
