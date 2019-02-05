@@ -8,11 +8,13 @@ class CreateUser extends Component {
             firstName: "",
             secondName: "",
             age: 0,
-            gameGenre: ""
+            gameGenre: "",
+            errors: []
         }
     }
 
     createUser = () => {
+
         axios.post('http://localhost:8081/solo-project-games-api/api/user/createUser', {
             firstName: this.state.firstName,
             secondName: this.state.secondName,
@@ -51,10 +53,20 @@ class CreateUser extends Component {
         event.preventDefault();
     }
 
+    handleSubmit = (event) => {
+        event.preventDefault();
+        if (!event.target.checkValidity()) {
+            this.props.message("FILL OUT FORM");
+            return;
+        } else {
+            this.createUser();
+        }
+    }
+
     render() {
         return (
             <div className="createUser" >
-                <form className="userForm" onSubmit={() => this.createUser}>
+                <form className="userForm" onSubmit={this.handleSubmit} noValidate>
                     <h1 className="formTitle">Create A User</h1>
                     <label htmlfor="firstName">First Name</label><input className="firstName" type="text" placeholder="First Name..." onChange={this.handleChange} required />
                     <label htmlfor="secondName">Second Name</label><input className="secondName" type="text" placeholder="Second Name..." onChange={this.handleChange} required />

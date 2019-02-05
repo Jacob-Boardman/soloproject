@@ -7,7 +7,9 @@ class DisplayMessage extends Component {
                 <div className="message">
                     <h1>Message</h1>
                     <br/>
-                    {this.props.message}
+                    <div className="messages">
+                        {this.props.message}
+                    </div>
                 </div>
             </div>
         );
