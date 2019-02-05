@@ -12,7 +12,7 @@ class CreateGame extends Component {
     }
 
     createGame = () => {
-        axios.post('http://35.242.187.147:8081/solo-project-games-api/api/game/createGame', {
+        axios.post('http://localhost:8081/solo-project-games-api/api/game/createGame', {
             title: this.state.title,
             ageRating: this.state.ageRating,
             gameGenre: this.state.gameGenre

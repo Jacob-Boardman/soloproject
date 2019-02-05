@@ -13,7 +13,7 @@ class CreateUser extends Component {
     }
 
     createUser = () => {
-        axios.post('http://35.242.187.147:8081/solo-project-games-api/api/user/createUser', {
+        axios.post('http://localhost:8081/solo-project-games-api/api/user/createUser', {
             firstName: this.state.firstName,
             secondName: this.state.secondName,
             age: this.state.age,

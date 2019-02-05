@@ -16,7 +16,7 @@ class UpdateUser extends Component {
     }
 
     updateUser = () => {
-        axios.put('http://35.242.187.147:8081/solo-project-games-api/api/user/updateUser/' + this.state.id, {
+        axios.put('http://localhost:8081/solo-project-games-api/api/user/updateUser/' + this.state.id, {
             firstName: this.state.firstName,
             secondName: this.state.secondName,
             age: this.state.age,

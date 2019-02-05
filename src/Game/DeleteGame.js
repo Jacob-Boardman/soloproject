@@ -12,7 +12,7 @@ class DeleteGame extends Component {
     }
 
     deleteGame = () => {
-        axios.delete('http://35.242.187.147:8081/solo-project-games-api/api/game/deleteGame/' + this.state.id)
+        axios.delete('http://localhost:8081/solo-project-games-api/api/game/deleteGame/' + this.state.id)
         .then(response => {this.props.message(response.data)})
     }
 

@@ -16,7 +16,7 @@ class UpdateGame extends Component {
     }
 
     updateGame = () => {
-        axios.put('http://35.242.187.147:8081/solo-project-games-api/api/game/updateGame/' + this.state.id, {
+        axios.put('http://localhost:8081/solo-project-games-api/api/game/updateGame/' + this.state.id, {
             title: this.state.title,
             ageRating: this.state.ageRating,
             gameGenre: this.state.gameGenre

@@ -13,13 +13,13 @@ class Homepage extends Component {
     }
 
     getUsers = () => {
-        axios.get('http://35.242.187.147:8081/solo-project-games-api/api/user/getAllUsers').then(response => {
+        axios.get('http://localhost:8081/solo-project-games-api/api/user/getAllUsers').then(response => {
             this.setState({ users: response.data });
         })
     }
 
     getGames = () => {
-        axios.get('http://35.242.187.147:8081/solo-project-games-api/api/game/getAllGames').then(response => {
+        axios.get('http://localhost:8081/solo-project-games-api/api/game/getAllGames').then(response => {
             this.setState({ games: response.data });
         })
     }
