@@ -44,10 +44,21 @@ class CreateGame extends Component {
         event.preventDefault();
     }
 
+    
+    handleSubmit = (event) => {
+        event.preventDefault();
+        if (!event.target.checkValidity()) {
+            this.props.message("No fields can be empty");
+            return;
+        } else {
+            this.createGame();
+        }
+    }
+
     render() {
         return (
             <div className="createGame" >
-                <form className="gameForm" onSubmit={() => this.createGame()}>
+                <form className="gameForm" onSubmit={this.handleSubmit} noValidate>
                     <h1 className="formTitle">Create A Game</h1>
                     <label htmlfor="title">Game Title</label><input className="title" type="text" placeholder="Title..." onChange={this.handleChange} required />
                     <label htmlfor="ageRating">Age Rating</label><input className="ageRating" type="number" placeholder="Type a numbered age rating" onChange={this.handleChange} required />
