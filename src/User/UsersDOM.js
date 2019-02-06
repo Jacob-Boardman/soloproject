@@ -23,7 +23,7 @@ class UsersDom extends Component {
     }
 
     getUserById = (userId) => {
-        axios.get('http://localhost:8081/solo-project-games-api/api/user/getUserById/' + userId).then(response => {
+        axios.get('http://game-matcher.uksouth.cloudapp.azure.com/solo-project-games-api/api/user/getUserById/' + userId).then(response => {
             this.setState({ user: response.data })
         })
     }

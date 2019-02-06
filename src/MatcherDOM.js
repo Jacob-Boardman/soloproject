@@ -20,14 +20,14 @@ class MatcherDOM extends Component {
     }
 
     getUserById = () => {
-        axios.get('http://localhost:8081/solo-project-games-api/api/user/getUserById/'+ this.state.id).then(response => {
+        axios.get('http://game-matcher.uksouth.cloudapp.azure.com/solo-project-games-api/api/user/getUserById/'+ this.state.id).then(response => {
             this.setState({ user: response.data })
             this.getGames();
         })
     }
 
     getGames = () => {
-        axios.get('http://localhost:8081/solo-project-games-api/api/game/getGameByGenre/'+ this.state.user.gameGenre).then(response => {
+        axios.get('http://game-matcher.uksouth.cloudapp.azure.com/solo-project-games-api/api/game/getGameByGenre/'+ this.state.user.gameGenre).then(response => {
             this.setState({games: response.data});
         })
     }
