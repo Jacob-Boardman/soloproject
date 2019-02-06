@@ -57,7 +57,6 @@ class UpdateGame extends Component {
     handleSubmit = (event) => {
         event.preventDefault();
         if (!event.target.checkValidity()) {
-            this.props.message("No fields can be empty");
             return;
         } else {
             this.updateGame();

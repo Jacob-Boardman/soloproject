@@ -12,11 +12,10 @@ class FindGame extends Component {
         this.setState({ id: event.target.value })
     }
 
-    changeId = () => {
-        function handleClick(e) {
-            e.preventDefault();
-            this.props.game(this.state.id);
-          }
+    changeId = (e) => {
+        e.preventDefault();
+        this.props.game(this.state.id);
+
     }
     render() {
         return (
