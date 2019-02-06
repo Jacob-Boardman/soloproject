@@ -49,7 +49,7 @@ class MatcherDOM extends Component {
                     <div className="findUser">
                         <form className="userForm" onSubmit={(e)=> e.preventDefault()}>
                             <h1 className="formTitle">Find A User</h1>
-                            <label htmlfor="id">ID</label><input className="id" type="number" placeholder="ID of account to Find" onChange={this.handleChange} required />
+                            <label htmlFor="id">ID</label><input className="id" type="number" placeholder="ID of account to Find" onChange={this.handleChange} required />
                             <button className="userSubmit" onClick={this.getUserById}>Match Games</button>
                         </form>
                         <User user={this.state.user} />

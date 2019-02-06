@@ -27,7 +27,7 @@ class DeleteGame extends Component {
             <div className="deleteGame">
                 <form className="gameForm" onSubmit={this.deleteGame}>
                     <h1 className="formTitle">Delete A Game</h1>
-                    <label for="id">ID</label><input className="id" type="number" placeholder="ID of account to Delete" onChange={this.handleChange} required />
+                    <label htmlFor="id">ID</label><input className="id" type="number" placeholder="ID of account to Delete" onChange={this.handleChange} required />
                     <button type="submit" className="gameSubmit">Delete Game</button>
                 </form>
             </div>

@@ -60,10 +60,10 @@ class CreateGame extends Component {
             <div className="createGame" >
                 <form className="gameForm" onSubmit={this.handleSubmit} noValidate>
                     <h1 className="formTitle">Create A Game</h1>
-                    <label htmlfor="title">Game Title</label><input className="title" type="text" placeholder="Title..." onChange={this.handleChange} required />
-                    <label htmlfor="ageRating">Age Rating</label><input className="ageRating" type="number" placeholder="Type a numbered age rating" onChange={this.handleChange} required />
-                    <label htmlfor="gameGenre">Favourite Game genre</label><select className="gameGenre" onChange={this.handleChange} required>
-                        <option value="" disabled selected>Select a Genre</option>
+                    <label htmlFor="title">Game Title</label><input className="title" type="text" placeholder="Title..." onChange={this.handleChange} required />
+                    <label htmlFor="ageRating">Age Rating</label><input className="ageRating" type="number" placeholder="Type a numbered age rating" onChange={this.handleChange} required />
+                    <label htmlFor="gameGenre">Favourite Game genre</label><select className="gameGenre" onChange={this.handleChange} required>
+                        <option value="" disabled defaultValue>Select a Genre</option>
                         <option value="rpg">RPG</option>
                         <option value="shooter">Shooter</option>
                         <option value="strategy">Strategy</option>
