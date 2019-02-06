@@ -68,7 +68,7 @@ class UpdateGame extends Component {
     render() {
         return (
             <div className=" updateGame" >
-                <form className="gameForm" onSubmit={this.handleSubmit}>
+                <form className="gameForm" onSubmit={this.handleSubmit} no noValidate>
                     <h1 className="formTitle">Update A Game</h1>
                     <label htmlfor="id">ID</label><input className="id" type="number" placeholder="ID of Game to update" onChange={this.handleChange} required />
                     <label htmlfor="title">Game Title</label><input className="title" type="text" placeholder="Title..." onChange={this.handleChange} required />
