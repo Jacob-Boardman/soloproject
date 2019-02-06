@@ -30,10 +30,10 @@ class UpdateGame extends Component {
         // eslint-disable-next-line default-case
         switch (event.target.className) {
             case "id":
-            this.setState({
-                id: event.target.value
-            })
-            break;
+                this.setState({
+                    id: event.target.value
+                })
+                break;
             case "title":
                 this.setState({
                     title: event.target.value
@@ -54,10 +54,21 @@ class UpdateGame extends Component {
         event.preventDefault();
     }
 
+    handleSubmit = (event) => {
+        event.preventDefault();
+        if (!event.target.checkValidity()) {
+            this.props.message("No fields can be empty");
+            return;
+        } else {
+            this.updateGame();
+        }
+    }
+
+
     render() {
         return (
             <div className=" updateGame" >
-                <form className="gameForm" onSubmit={this.updateGame()}>
+                <form className="gameForm" onSubmit={this.handleSubmit}>
                     <h1 className="formTitle">Update A Game</h1>
                     <label htmlfor="id">ID</label><input className="id" type="number" placeholder="ID of Game to update" onChange={this.handleChange} required />
                     <label htmlfor="title">Game Title</label><input className="title" type="text" placeholder="Title..." onChange={this.handleChange} required />
@@ -70,7 +81,7 @@ class UpdateGame extends Component {
                         <option value="racing">Racing</option>
                         <option value="multiplayer">Multiplayer</option>
                     </select>
-                    <button  className="gameSubmit" type="submit">Update Game</button>
+                    <button className="gameSubmit" type="submit">Update Game</button>
                 </form>
             </div >
         );

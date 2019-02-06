@@ -58,10 +58,21 @@ class UpdateUser extends Component {
         event.preventDefault();
     }
 
+    handleSubmit = (event) => {
+        event.preventDefault();
+        if (!event.target.checkValidity()) {
+            this.props.message("No fields can be empty");
+            return;
+        } else {
+            this.updateUser();
+        }
+    }
+
+
     render() {
         return (
             <div className=" updateUser" >
-                <form className="userForm" onSubmit={this.updateUser}>
+                <form className="userForm" onSubmit={this.handleSubmit}>
                     <h1 className="formTitle">Update A User</h1>
                     <label htmlfor="id">ID</label><input className="id" type="number" placeholder="ID of account to update" onChange={this.handleChange} required />
                     <label htmlfor="firstName">First Name</label><input className="firstName" type="text" placeholder="First Name..." onChange={this.handleChange} required />
