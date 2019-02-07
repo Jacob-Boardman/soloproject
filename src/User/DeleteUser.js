@@ -12,7 +12,7 @@ class DeleteUser extends Component {
     }
 
     deleteUser = () => {
-        axios.delete('http://game-matcher.uksouth.cloudapp.azure.com/solo-project-games-api/api/user/deleteUser/' + this.state.id)
+        axios.delete('/api/user/deleteUser/' + this.state.id)
         .then(response => this.props.message(response.data))
     }
 

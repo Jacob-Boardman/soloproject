@@ -16,7 +16,7 @@ class UpdateUser extends Component {
     }
 
     updateUser = () => {
-        axios.put('http://game-matcher.uksouth.cloudapp.azure.com/solo-project-games-api/api/user/updateUser/' + this.state.id, {
+        axios.put('/api/user/updateUser/' + this.state.id, {
             firstName: this.state.firstName,
             secondName: this.state.secondName,
             age: this.state.age,

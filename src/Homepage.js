@@ -13,13 +13,13 @@ class Homepage extends Component {
     }
 
     getUsers = () => {
-        axios.get('http://game-matcher.uksouth.cloudapp.azure.com/solo-project-games-api/api/user/getAllUsers').then(response => {
+        axios.get('/api/user/getAllUsers').then(response => {
             this.setState({ users: response.data });
         })
     }
 
     getGames = () => {
-        axios.get('http://game-matcher.uksouth.cloudapp.azure.com/solo-project-games-api/api/game/getAllGames').then(response => {
+        axios.get('/api/game/getAllGames').then(response => {
             this.setState({ games: response.data });
         })
     }

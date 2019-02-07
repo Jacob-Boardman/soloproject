@@ -12,7 +12,7 @@ class CreateGame extends Component {
     }
 
     createGame = () => {
-        axios.post('http://game-matcher.uksouth.cloudapp.azure.com/solo-project-games-api/api/game/createGame', {
+        axios.post('/api/game/createGame', {
             title: this.state.title,
             ageRating: this.state.ageRating,
             gameGenre: this.state.gameGenre

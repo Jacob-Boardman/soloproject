@@ -15,7 +15,7 @@ class CreateUser extends Component {
 
     createUser = () => {
 
-        axios.post('http://game-matcher.uksouth.cloudapp.azure.com/solo-project-games-api/api/user/createUser', {
+        axios.post('/api/user/createUser', {
             firstName: this.state.firstName,
             secondName: this.state.secondName,
             age: this.state.age,

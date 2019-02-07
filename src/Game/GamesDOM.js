@@ -23,7 +23,7 @@ class GamesDom extends Component {
     }
 
     getGameById = (gameId) => {
-        axios.get('http://game-matcher.uksouth.cloudapp.azure.com/solo-project-games-api/api/game/getGameById/' + gameId).then(response => {
+        axios.get('/api/game/getGameById/' + gameId).then(response => {
             this.setState({ game: response.data })
         })
     }
